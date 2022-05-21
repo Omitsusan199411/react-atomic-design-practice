@@ -6,7 +6,7 @@ export const UserCard = (props) => {
   const { user } = props;
   return (
     <Card>
-      <UserIconWithName user={user} />
+      <UserIconWithName image={user.image} name={user.name} />
       <SDl>
         <dt>メール</dt>
         <dd>{user.email}</dd>
@@ -29,5 +29,6 @@ const SDl = styled.dl`
   dd {
     padding-left: 32px;
     padding-bottom: 8px;
+    overflow-wrap: break-word;
   }
 `;
