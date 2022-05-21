@@ -1,11 +1,12 @@
+import { Card } from "../../atoms/card/Card";
+import { UserIconWithName } from "../../molecules/user/UserIconWithName";
 import styled from "styled-components";
 
 export const UserCard = (props) => {
   const { user } = props;
   return (
-    <SDiv>
-      <img height={160} width={160} src={user.image} alt={user.name} />
-      <p>{user.name}</p>
+    <Card>
+      <UserIconWithName user={user} />
       <SDl>
         <dt>メール</dt>
         <dd>{user.email}</dd>
@@ -16,14 +17,9 @@ export const UserCard = (props) => {
         <dt>WEB</dt>
         <dd>{user.website}</dd>
       </SDl>
-    </SDiv>
+    </Card>
   );
 };
-
-const SDiv = styled.div`
-  text-align: left;
-  margin-top: 50px;
-`;
 
 const SDl = styled.dl`
   margin-bottom: 0px;
