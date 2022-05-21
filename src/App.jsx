@@ -1,12 +1,13 @@
 import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
+import { SearchInput } from "./components/molecules/SearchInput";
 import "./styles.css";
 
 export const App = () => {
   return (
     <div className="App">
-      <PrimaryButton>テスト</PrimaryButton>
-      <SecondaryButton>テスト２</SecondaryButton>
+      <SearchInput>検索</SearchInput>
+      <SecondaryButton>検索2</SecondaryButton>
     </div>
   );
 };
