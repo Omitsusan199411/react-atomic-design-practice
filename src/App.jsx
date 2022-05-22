@@ -4,7 +4,7 @@ import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/UserCard";
-import { HeaderOnly } from "./components/templates/HeaderOnly";
+import { DefaultLayout } from "./components/templates/DefaultLayout";
 import "./styles.css";
 
 const user = {
@@ -22,10 +22,10 @@ const user = {
 export const App = () => {
   return (
     <BrowserRouter>
-      <HeaderOnly>
+      <DefaultLayout>
         <SearchInput />
         <UserCard user={user} />
-      </HeaderOnly>
+      </DefaultLayout>
     </BrowserRouter>
   );
 };
