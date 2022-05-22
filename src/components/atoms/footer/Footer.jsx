@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { Switch, Route, Link } from "react-router-dom";
-
 export const Footer = () => {
   return (
     <>
