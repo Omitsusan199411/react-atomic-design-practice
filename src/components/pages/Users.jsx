@@ -23,8 +23,8 @@ export const Users = () => {
       <h2>Usersページ</h2>
       <SearchInput />
       <SUserArea>
-        {users.map((user) => (
-          <UserCard key={user.id} user={user} />
+        {users.map((obj) => (
+          <UserCard key={obj.id} user={obj} />
         ))}
       </SUserArea>
     </SContainer>
