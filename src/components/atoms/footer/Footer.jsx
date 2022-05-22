@@ -5,14 +5,7 @@ import { Switch, Route, Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <>
-      <SFooter>
-        <SLink to="/">HOME</SLink>
-        <SLink to="/users">Users</SLink>
-      </SFooter>
-      <Switch>
-        <Route path="/"></Route>
-        <Route path="/users"></Route>
-      </Switch>
+      <SFooter>&copy; 2021 test Inc</SFooter>
     </>
   );
 };
@@ -22,8 +15,7 @@ const SFooter = styled.footer`
   color: #fff;
   text-align: center;
   padding: 8px 0;
-`;
-
-const SLink = styled(Link)`
-  margin: 0px 8px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
 `;
