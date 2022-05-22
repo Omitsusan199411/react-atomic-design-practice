@@ -1,3 +1,5 @@
+import { BrowserRouter } from "react-router-dom";
+
 import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { SearchInput } from "./components/molecules/SearchInput";
@@ -19,9 +21,11 @@ const user = {
 
 export const App = () => {
   return (
-    <HeaderOnly>
-      <SearchInput />
-      <UserCard user={user} />
-    </HeaderOnly>
+    <BrowserRouter>
+      <HeaderOnly>
+        <SearchInput />
+        <UserCard user={user} />
+      </HeaderOnly>
+    </BrowserRouter>
   );
 };
