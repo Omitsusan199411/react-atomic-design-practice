@@ -1,6 +1,11 @@
 import { Router } from "./router/Router";
+import { UserProvider } from "./providers/UserProvider";
 import "./styles.css";
 
 export const App = () => {
-  return <Router />;
+  return (
+    <UserProvider>
+      <Router />
+    </UserProvider>
+  );
 };
