@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <SHeader>
-      <SLink to="/">TOP</SLink>
+      <SLink to="/">HOME</SLink>
       <SLink to="/users">Users</SLink>
     </SHeader>
   );
