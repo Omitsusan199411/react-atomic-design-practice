@@ -1,8 +1,10 @@
+import React, { memo } from "react";
 import { Card } from "../../atoms/card/Card";
 import { UserIconWithName } from "../../molecules/user/UserIconWithName";
 import styled from "styled-components";
 
-export const UserCard = (props) => {
+export const UserCard = memo((props) => {
+  console.log("UserCard");
   const { user } = props;
   return (
     <Card>
@@ -19,7 +21,7 @@ export const UserCard = (props) => {
       </SDl>
     </Card>
   );
-};
+});
 
 const SDl = styled.dl`
   margin-bottom: 0px;
